@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+/* 页面背景 */
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9ddcf0;
+    font-family: Arial, sans-serif;
+}
+
+/* 中间卡片 */
+.app {
+    width: 400px;
+    height: 360px;
+    padding: 20px 25px;
+    background-color: #e8f7f2;
+    border-radius: 30px;
+}
+
+/* 密码框 */
+.generate-pass {
+    height: 51px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    background-color: #f9f9f9;
+    border: 2px solid #dedede;
+    border-radius: 40px;
+}
+
+/* 密码文字 */
+#password {
+    flex: 1;
+    font-size: 20px;
+    margin-left: 21px;
+    color: #5c5b5b;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+/* 复制图标 */
+.copy {
+    width: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    color: #b7bebb;
+    cursor: pointer;
+}
+
+.copy svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+.copy:hover {
+    color: #25866b;
+}
+
+/* 密码类型 */
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+    gap: 25px;
+    color: #4a4a4a;
+}
+
+.inputs input[type="checkbox"] {
+    margin-left: 40px;
+    width: 18px;
+    height: 18px;
+    accent-color: #25866b;
+}
+
+/* 密码长度 */
+.input-group {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 40px;
+    color: #4a4a4a;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.slider {
+    flex: 1;
+    height: 1px;
+    min-width: 0;
+    accent-color: #1685f8;
+    cursor: pointer;
+}
+
+.value {
+    width: 36px;
+    margin-right: 25px;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* 底部按钮 */
+.inputs button {
+    width: 300px;
+    height: 50px;
+    align-self: center;
+    font-size: 20px;
+    border: none;
+    border-radius: 40px;
+    background-color: #5ca58c;
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.inputs button:hover {
+    background-color: #25866b;
+}
