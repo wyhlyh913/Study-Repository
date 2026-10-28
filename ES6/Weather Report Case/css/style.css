@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+#app {
+    margin: 0;
+    padding: 45px 24px 72px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    font-family: Arial, "Microsoft YaHei", sans-serif;
+}
+
+/* 商标信息 */
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 400px;
+    height: 80px;
+    padding: 14px 22px;
+
+    background: linear-gradient(115deg,
+            #79ddb1 0%,
+            #83d8cf 55%,
+            #83cbd8 100%);
+
+    border: 1px solid rgba(255, 255, 255, 0.62);
+    border-radius: 25px;
+
+    box-shadow: 11px 10px 0 rgba(15, 11, 13, 0.5);
+}
+
+.brand h1 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.brand-icon {
+    font-size: 31px;
+    line-height: 1;
+}
+
+.umbrella {
+    font-size: 34px;
+}
+
+/* 增加毛玻璃效果 */
+.card {
+    width: 100%;
+    max-width: 400px;
+    padding: 28px;
+    background: rgba(147, 139, 49, 0.2);
+    backdrop-filter: blur(9px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+/* 搜素框效果 */
+.search {
+    display: flex;
+    gap: 7px;
+    margin-bottom: 13px;
+    justify-content: center;
+}
+
+.search-bar {
+    border: none;
+    outline: none;
+    padding: 14px;
+    width: 240px;
+    height: 45px;
+    font-size: 18px;
+    background: rgba(147, 139, 49, 0.3);
+    border-radius: 20px;
+}
+
+.search button {
+    border: none;
+    outline: none;
+    width: 45px;
+    height: 45px;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 50%;
+}
+
+span {
+    display: flex;
+    font-size: 18px;
+    justify-self: center;
+}
+
+/* 温度 */
+.city {
+    display: flex;
+    justify-content: center;
+}
+
+.temp {
+    display: flex;
+    justify-content: center;
+}
+
+/* 天气情况 */
+.felx {
+    display: flex;
+    align-items: center;
+}
+
+/* 湿度和风速 */
+.other {
+    padding-top: 9px;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    color: black;
+    font-size: 17px;
+}
+
+/* 左下角署名 */
+.credit {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 225px;
+    min-height: 49px;
+    padding: 10px 22px;
+    background: linear-gradient(110deg,
+            #79ddb1,
+            #83cbd8);
+    border-radius: 18px 0 0 0;
+    box-shadow: 0 -3px 14px rgba(0, 0, 0, 0.08);
+}
+
+.credit a {
+    color: #11121a;
+    font-size: 15px;
+    font-weight: 700;
+}

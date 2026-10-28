@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body id="app">
+    <div id="loading"></div>
+    <!-- 顶部品牌标题 -->
+    <header class="brand">
+        <span class="brand-icon">🌦️</span>
+        <h1>Weather.io</h1>
+        <span class="brand-icon umbrella">☂️</span>
+    </header>
+    <!-- 改变天气的卡片 -->
+    <div class="card">
+        <!-- 搜索框 -->
+        <div class="search">
+            <input type="text" class="search-bar" placeholder="Search">
+            <button>
+                <svg stroke="currentColor" fill="currentColor" viewBox="0 0 16 16" height="1em" width="1.5em">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 10-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 001.415-1.414l-3.85-3.85a1.007 1.007 0 00-.115-.1zM12 6.5a5.5 5.5 0 11-11 0 5.5 5.5 0 0111 0z">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <span>注意：请输入城市名拼音，首字母大写</span>
+        <!-- 天气展示区域 -->
+        <div class="weather">
+            <h2 class="city">Weather in Shanghai</h2>
+            <h1 class="temp">21°C</h1>
+            <div class="felx">
+                <img src="https://openweathermap.org/img/wn/04d.png" alt="" class="icon" />
+                <div class="description">多云</div>
+            </div>
+            <div class="other">
+                <div class="humidity">湿度: 60%</div>
+                <div class="wind">风速: 6.2 km/h</div>
+            </div>
+        </div>
+    </div>
+    <!-- 右下角作者署名 -->
+    <footer class="credit">
+        <a href="#" aria-label="作者 Haiyong">~ Haiyong</a>
+    </footer>
+    <script type="module" src="./js/script.js"></script>
+    <script src="js/vanilla-tilt.js"></script
+</body>
+
+</html>
